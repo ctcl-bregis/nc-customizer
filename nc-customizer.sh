@@ -22,11 +22,11 @@ rm -rf ./3rdparty/microsoft
 rm -rf ./3rdparty/aws
 
 # File modifications: Telemetry prevention
-find ./lib/private/Support/CrashReport -o -type f -print0 | xargs -0 sed -i 's/owncloud.org/0.0.0.0/g'
-find ./lib/public/Support/CrashReport -o -type f -print0 | xargs -0 sed -i 's/owncloud.org/0.0.0.0/g'
-find ./lib/private/Support/CrashReport -o -type f -print0 | xargs -0 sed -i 's/owncloud.com/0.0.0.0/g'
-find ./lib/public/Support/CrashReport -o -type f -print0 | xargs -0 sed -i 's/owncloud.com/0.0.0.0/g'
-find ./lib/private/Support/CrashReport -o -type f -print0 | xargs -0 sed -i 's/nextcloud.com/0.0.0.0/g'
-find ./lib/public/Support/CrashReport -o -type f -print0 | xargs -0 sed -i 's/nextcloud.com/0.0.0.0/g'
-find ./lib/private/Support/CrashReport -o -type f -print0 | xargs -0 sed -i 's/nextcloud.org/0.0.0.0/g'
-find ./lib/public/Support/CrashReport -o -type f -print0 | xargs -0 sed -i 's/nextcloud.org/0.0.0.0/g'
+find ./lib/private/Support/CrashReport -type f -print0 | xargs -0 sed -i 's/owncloud.org/0.0.0.0/g'
+find ./lib/public/Support/CrashReport -type f -print0 | xargs -0 sed -i 's/owncloud.org/0.0.0.0/g'
+find ./lib/private/Support/CrashReport -type f -print0 | xargs -0 sed -i 's/owncloud.com/0.0.0.0/g'
+find ./lib/public/Support/CrashReport -type f -print0 | xargs -0 sed -i 's/owncloud.com/0.0.0.0/g'
+find ./lib/private/Support/CrashReport -type f -print0 | xargs -0 sed -i 's/nextcloud.com/0.0.0.0/g'
+find ./lib/public/Support/CrashReport -type f -print0 | xargs -0 sed -i 's/nextcloud.com/0.0.0.0/g'
+find ./lib/private/Support/CrashReport -type f -print0 | xargs -0 sed -i 's/nextcloud.org/0.0.0.0/g'
+find ./lib/public/Support/CrashReport -type f -print0 | xargs -0 sed -i 's/nextcloud.org/0.0.0.0/g'
