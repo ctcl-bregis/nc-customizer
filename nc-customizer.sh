@@ -18,8 +18,6 @@ rm -rf ./tests
 rm -rf ./core/vendor/zxcvbn
 rm -rf ./core/vendor/.gitignore
 rm -rf ./.devcontainer
-rm -rf ./3rdparty/microsoft
-rm -rf ./3rdparty/aws
 
 # File modifications: Telemetry prevention
 find ./lib/private/Support/CrashReport -type f -print0 | xargs -0 sed -i 's/owncloud.org/0.0.0.0/g'
